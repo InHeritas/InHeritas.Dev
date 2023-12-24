@@ -11,17 +11,31 @@ html {
   font-weight: 500 !important;
 }
 
+/* 세미볼드 */
 .nx-font-semibold {
   font-weight: 700 !important;
 }
 
+/* 볼드 */
 .nx-font-bold {
   font-weight: 800 !important;
 }
 
+/* MD 볼드체 */
 b, strong {
   font-weight: 700 !important;
 }
+
+/* navBar 높이 */
+.nx-h-\[var\(--nextra-navbar-height\)\] {
+  height: 3.5rem !important;
+}
+
+/* 페이지 너비 */
+.nx-max-w-\[90rem\] {
+  max-width: 100rem !important;
+}
+
 
 .feature-block code {
   font-family: 'Intel One Mono';
