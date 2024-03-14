@@ -1,4 +1,4 @@
-@import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css');
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
 
 @font-face {
   font-family: 'Intel One Mono'; /* 폰트의 이름을 정의합니다 */
@@ -7,23 +7,23 @@
 }
 
 html {
-  font-family: 'SUITE', -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   font-weight: 500 !important;
 }
 
 /* 세미볼드 */
 .nx-font-semibold {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 /* 볼드 */
 .nx-font-bold {
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 
 /* MD 볼드체 */
 b, strong {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 /* navBar 높이 */
