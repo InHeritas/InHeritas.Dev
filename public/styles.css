@@ -11,6 +11,18 @@ html {
   font-weight: 500 !important;
 }
 
+.nx-text-4xl {
+  font-size: 2rem !important;
+}
+
+.nx-text-3xl {
+  font-size: 1.6rem !important;
+}
+
+.nx-text-2xl {
+  font-size: 1.3rem !important;
+}
+
 /* 세미볼드 */
 .nx-font-semibold {
   font-weight: 600 !important;
