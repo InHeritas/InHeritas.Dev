@@ -11,6 +11,12 @@ html {
   font-weight: 500 !important;
 }
 
+.upload_date {
+  font-feature-settings: "tnum";
+}
+
+
+
 .nx-text-4xl {
   font-size: 2rem !important;
 }
@@ -22,6 +28,9 @@ html {
 .nx-text-2xl {
   font-size: 1.3rem !important;
 }
+
+
+
 
 /* 세미볼드 */
 .nx-font-semibold {
@@ -38,6 +47,9 @@ b, strong {
   font-weight: 600 !important;
 }
 
+
+
+
 /* navBar 높이 */
 .nx-h-\[var\(--nextra-navbar-height\)\] {
   height: 3.5rem !important;
@@ -47,6 +59,8 @@ b, strong {
 .nx-max-w-\[90rem\] {
   max-width: 100rem !important;
 }
+
+
 
 
 .feature-block code {
@@ -88,12 +102,16 @@ b, strong {
   margin-bottom: 10px; /* 아래쪽 마진 */
 }
 
+
+
 .notice a {
   width: 300px; /* 원하는 너비 설정 */
   white-space: nowrap; /* 텍스트를 한 줄로 유지 */
   overflow: hidden; /* 초과하는 내용 숨기기 */
   text-overflow: ellipsis; /* 텍스트가 오버플로우되면 ...으로 표시 */
 }
+
+
 
 .text-xs {
   font-size: 0.8rem;
