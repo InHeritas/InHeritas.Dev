@@ -1,0 +1,14 @@
+{
+  "notice": {
+    "title": "Notice",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": false
+    }
+  },
+  "release-notes": "Release Notes",
+  "support": "Support"
+}
