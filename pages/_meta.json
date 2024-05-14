@@ -18,5 +18,15 @@
       "toc": true,
       "pagination": false
     }
+  },
+  "mytype": {
+    "title": "MyType for Safari",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": false
+    }
   }
 }
