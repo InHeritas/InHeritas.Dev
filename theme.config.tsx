@@ -5,7 +5,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   logo: <span>
-      <Image src="/img/logo.png" alt="Logo" width={110} height={30} />
+      <Image src="/img/InHeritas-Dev-Logo.svg" alt="Logo" width={120} height={30} />
     </span>,
   footer: {
     text: (
