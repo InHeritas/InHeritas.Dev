@@ -9,6 +9,11 @@
       "pagination": false
     }
   },
-  "release-notes": "Release Notes",
+  "release-notes": {
+    "title": "Release Notes",
+    "theme": {
+      "toc": false
+    }
+  },
   "support": "Support"
 }
