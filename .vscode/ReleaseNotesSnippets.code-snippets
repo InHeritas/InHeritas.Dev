@@ -1,0 +1,56 @@
+{
+    "Create HTML Table Row for New Features": {
+        "prefix": "featurerow",
+        "body": [
+            "<tr className=\"block feature\" style={{ height: '40px' }}>",
+            "    <td className=\"cat\" style={{ border: 'none', verticalAlign: 'top', paddingTop: '10px', paddingBottom: '10px' }}>`Feature`</td>",
+            "    <td style={{ border: 'none', verticalAlign: 'top', paddingTop: '10px', paddingBottom: '10px' }}>${1:... 추가된 기능 ...}</td>",
+            "</tr>"
+        ],
+        "description": "Creates a table row with feature description"
+    },
+
+    "Create HTML Table Row for Changes": {
+        "prefix": "updaterow",
+        "body": [
+            "<tr className=\"block update\" style={{ height: '40px' }}>",
+            "    <td className=\"cat\" style={{ border: 'none', verticalAlign: 'top', paddingTop: '10px', paddingBottom: '10px' }}>`Changed`</td>",
+            "    <td style={{ border: 'none', verticalAlign: 'top', paddingTop: '10px', paddingBottom: '10px' }}>${1:... 변경됨 ...}</td>",
+            "</tr>"
+        ],
+        "description": "Creates a table row with feature description"
+    },
+
+    "Create HTML Table Row for Fixes": {
+        "prefix": "fixrow",
+        "body": [
+            "<tr className=\"block fix\" style={{ height: '40px' }}>",
+            "    <td className=\"cat\" style={{ border: 'none', verticalAlign: 'top', paddingTop: '10px', paddingBottom: '10px' }}>`Fixed`</td>",
+            "    <td style={{ border: 'none', verticalAlign: 'top', paddingTop: '10px', paddingBottom: '10px' }}>${1:... 수정됨 ...}</td>",
+            "</tr>"
+        ],
+        "description": "Creates a table row with feature description"
+    },
+
+    "Create HTML Empty Table Row": {
+        "prefix": "emptyrow",
+        "body": [
+            "<tr style={{ height: '15px' }}></tr> {/* 빈 행 추가 */}"
+        ],
+        "description": "Creates a table row with feature description"
+    },
+
+    "Create HTML Table with Border": {
+        "prefix": "htmltable",
+        "body": [
+            "<br/><hr/>",
+            "<table style={{ borderCollapse: 'collapse', border: 'none' }}>",
+            "    <tbody>",
+            "        ${1:... 테이블 내용 ...}",
+            "    </tbody>",
+            "</table>",
+            "<hr/>"
+        ],
+        "description": "Creates an HTML table with border collapse and no border"
+    }
+}
