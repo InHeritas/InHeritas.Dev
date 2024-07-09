@@ -1,18 +1,13 @@
-@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 @font-face {
-  font-family: 'GowunDodum-Regular'; /* 폰트의 이름을 정의합니다 */
-  src: url('/fonts/GowunDodum-Regular.woff2') format('woff2'); /* WOFF2 폰트 경로 */
-}
-
-@font-face {
-  font-family: 'Geist Mono'; /* 폰트의 이름을 정의합니다 */
-  src: url('/fonts/GeistMonoVF.woff2') format('woff2'); /* WOFF2 폰트 경로 */
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMonoVF.woff2') format('woff2');
 }
 
 html {
-  font-family: "GowunDodum-Regular", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  font-weight: 500 !important;
+  font-family: "Noto Sans KR", -apple-system, system-ui, sans-serif !important;
+  font-weight: 400 !important;
 }
 
 .upload_date {
