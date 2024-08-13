@@ -28,5 +28,15 @@
       "toc": true,
       "pagination": false
     }
+  },
+  "sgnoti": {
+    "title": "SGNoti",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": false
+    }
   }
 }
