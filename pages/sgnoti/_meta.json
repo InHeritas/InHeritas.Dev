@@ -1,3 +1,19 @@
 {
+  "notice": {
+    "title": "Notice",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": false
+    }
+  },
+  "release-notes": {
+    "title": "Release Notes",
+    "theme": {
+      "toc": false
+    }
+  },
   "support": "Support"
 }
