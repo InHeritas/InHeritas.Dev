@@ -94,6 +94,7 @@ b, strong {
 
 td.cat {
   width: 95px;
+  vertical-align: top;
 }
 
 
