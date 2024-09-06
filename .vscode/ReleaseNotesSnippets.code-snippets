@@ -4,7 +4,7 @@
         "body": [
             "<tr className=\"block feature\">",
             "    <td className=\"cat\">`Feature`</td>",
-            "    <td>${1:... 추가된 기능 ...}</td>",
+            "    <td className='text-sm'>${1:... 추가된 기능 ...}</td>",
             "</tr>${2:}"
         ],
         "description": "Creates a table row with feature description"
@@ -15,7 +15,7 @@
         "body": [
             "<tr className=\"block update\">",
             "    <td className=\"cat\">`Changed`</td>",
-            "    <td>${1:... 변경됨 ...}</td>",
+            "    <td className='text-sm'>${1:... 변경됨 ...}</td>",
             "</tr>${2:}"
         ],
         "description": "Creates a table row with feature description"
@@ -26,7 +26,7 @@
         "body": [
             "<tr className=\"block fix\">",
             "    <td className=\"cat\">`Fixed`</td>",
-            "    <td>${1:... 수정됨 ...}</td>",
+            "    <td className='text-sm'>${1:... 수정됨 ...}</td>",
             "</tr>${2:}"
         ],
         "description": "Creates a table row with feature description"
