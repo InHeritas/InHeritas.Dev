@@ -1,5 +1,6 @@
 {
   "notice": {
+    "display": "hidden",
     "title": "Notice",
     "theme": {
       "breadcrumb": false,
@@ -10,10 +11,14 @@
     }
   },
   "release-notes": {
+    "display": "hidden",
     "title": "Release Notes",
     "theme": {
       "toc": false
     }
   },
-  "support": "Support"
+  "support": {
+    "display": "hidden",
+    "title": "Support"
+  }
 }
