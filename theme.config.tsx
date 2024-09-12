@@ -37,7 +37,7 @@ const config: DocsThemeConfig = {
     }
   },
   darkMode: false,
-  gitTimestamp: false
+  gitTimestamp: null
 }
 
 export default config

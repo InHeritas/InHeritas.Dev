@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import { Callout } from 'nextra/components'
+import GitTimestamp from 'components/git-timestamp'
 
 # iOS 15 지원 중단 안내
 
-<div style={{ textAlign: 'right' }}>
-  Last Updated: 2023/12/31
+<div style={{ textAlign: 'right' }} className='text-sm'>
+  <GitTimestamp timestamp={new Date()} />
 </div>
 
 더 나은 사용 환경을 제공하기 위해 2024년 1월 중으로 iOS 15 지원을 중단할 예정입니다.  

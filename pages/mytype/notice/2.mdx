@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import { Callout } from 'nextra/components'
+import GitTimestamp from 'components/git-timestamp'
 
 # 문제 해결 및 지원
 
-<div style={{ textAlign: 'right' }}>
-  Last Updated: 2024.09.05
+<div style={{ textAlign: 'right' }} className='text-sm'>
+  <GitTimestamp timestamp={new Date()} />
 </div>
 
 폰트 파일 등록에 실패한 경우, 아래의 내용을 참고해주세요.  
@@ -14,8 +15,16 @@ import { Callout } from 'nextra/components'
 
 (iOS 17 이하에서는 문제가 없습니다.)
 
+최근 Webkit 커밋에 따르면 문제가 해결된 것으로 보입니다. (https://commits.webkit.org/283383@main)  
+  
+몇 달 내로 정식 버전 사파리에 반영될 것으로 예상되며, 해당 버전부터는 용량 제한 문제 없이 글꼴 파일을 사용하실 수 있을 것으로 보입니다. 
+추후 문제가 해결되는대로 업데이트를 통해 글꼴 파일 등록 시 woff2로 변환하지 않고 파일을 등록할 수 있는 옵션을 제공할 예정입니다.  
+
+해당 문제에 대한 자세한 내용은 아래의 기존 공지와 위의 링크를 참고하시기 바랍니다.
+
+---------------
+
 현재 iOS 18 사파리의 문제로 파일 등록 시 용량 제한이 존재합니다. 글꼴 파일에 따라 정확한 수치는 조금씩 다르지만 약 4MB를 초과하는 파일을 저장 시 오류가 일어납니다.  
 
-iOS / iPadOS 18 이용자는 MyType 1.2.2 버전부터 ttf와 otf 파일의 경우 자동으로 woff2 파일로 변환하여 저장하며, 이를 통해 대부분의 글꼴 파일을 사용하실 수 있습니다.  
-
-하지만, woff2 형식의 파일임에도 불구하고 등록하려는 파일의 총합이 약 4MB를 초과하는 경우 등록이 불가능합니다. 이 경우 다른 글꼴을 사용해주시기 바랍니다.
+iOS / iPadOS 18 이용자는 MyType 1.2.2 버전부터 ttf와 otf 파일의 경우 자동으로 woff2 파일로 변환하여 저장하며, 이를 통해 대부분의 글꼴 파일을 사용하실 수 있습니다. 
+하지만, woff2 형식의 파일임에도 불구하고 등록하려는 파일의 총합이 약 4MB를 초과하는 경우 등록이 불가능하며, 이 경우 다른 글꼴을 사용해주시기 바랍니다.

@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import { Callout } from 'nextra/components'
+import GitTimestamp from 'components/git-timestamp'
 
 # 콘텐츠 차단 기능 안내
 
-<div style={{ textAlign: 'right' }}>
-  Last Updated: 2022/11/02
+<div style={{ textAlign: 'right' }} className='text-sm'>
+  <GitTimestamp timestamp={new Date()} />
 </div>
 
 <Callout type="warning" emoji="⚠️">

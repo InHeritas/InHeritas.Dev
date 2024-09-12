@@ -1,9 +1,10 @@
 import { Callout } from 'nextra/components'
+import GitTimestamp from 'components/git-timestamp'
 
 # Welcome!
 
-<div style={{ textAlign: 'right' }}>
-  Last Updated: 2022/11/01
+<div style={{ textAlign: 'right' }} className='text-sm'>
+  <GitTimestamp timestamp={new Date()} />
 </div>
 
 <Callout emoji="💡">
