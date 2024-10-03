@@ -2,16 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
 @font-face {
   font-family: 'Geist Mono';
   src: url('/fonts/GeistMonoVF.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 html {
-  font-family: "Noto Sans KR", -apple-system, system-ui, sans-serif !important;
-  font-weight: 400 !important;
+  font-family: "Paperlogy", -apple-system, system-ui, sans-serif !important;
 }
 
 .upload_date {
@@ -66,30 +77,32 @@ b, strong {
 
 
 .block {
-  margin-top: 10px;   /* 위쪽 마진 */
-  margin-bottom: 10px; /* 아래쪽 마진 */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .block code {
+  display: inline-block;
+  width: 80px;
   font-family: 'Geist Mono';
   font-weight: 'regular';
   font-size: 0.9rem;
   margin-right: 10px;
-  border-radius: 6px; /* 테두리 둥글기 */
-  padding: 0.2em 0.3em; /* 패딩 */
+  border-radius: 6px;
+  padding: 0.2em 0.3em;
+  text-align: center;
 }
-
 
 .block.feature code {
-  background-color: #0e845120; /* 배경색 */
-  color: #0E8450; /* 텍스트 색상 변경 */
+  background-color: #0e845120;
+  color: #0E8450;
 }
 .block.update code {
-  background-color: #203AA220; /* 배경색 */
-  color: #203AA2; /* 텍스트 색상 변경 */
+  background-color: #203AA220;
+  color: #203AA2;
 }
 .block.fix code {
-  background-color: #B75F1720; /* 배경색 */
-  color: #B75F17; /* 텍스트 색상 변경 */
+  background-color: #B75F1720;
+  color: #B75F17;
 }
 
 td.cat {
