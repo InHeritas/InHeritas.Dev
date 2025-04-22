@@ -1,6 +1,7 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import { Analytics } from '@vercel/analytics/next';
 import Image from 'next/image'
 import '../styles/globals.css'
  
@@ -33,17 +34,18 @@ export default async function RootLayout({ children }) {
         {/* Your additional tags should be passed as `children` of `<Head>` element */}
       </Head>
       <body>
-        <Layout
-          navbar={navbar}
-          pageMap={await getPageMap()}
-          footer={footer}
-          editLink={null}
-          feedback={{ content: null }}
-          sidebar={{ defaultMenuCollapseLevel: 2, toggleButton: false }}
-          nextThemes={{ defaultTheme: 'light' }}
-          darkMode={false}
-        >
+          <Layout
+            navbar={navbar}
+            pageMap={await getPageMap()}
+            footer={footer}
+            editLink={null}
+            feedback={{ content: null }}
+            sidebar={{ defaultMenuCollapseLevel: 2, toggleButton: false }}
+            nextThemes={{ defaultTheme: 'light' }}
+            darkMode={false}
+          >
           {children}
+          <Analytics />
         </Layout>
       </body>
     </html>
