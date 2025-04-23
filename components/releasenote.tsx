@@ -1,13 +1,30 @@
 import React from 'react';
 
+type ChangeType = 'feature' | 'changed' | 'fixed' | 'update' | 'fix' | string;
+
 /**
- * 각 변경 사항 항목을 표시하는 컴포넌트
- * @param {object} props
- * @param {'feature' | 'changed' | 'fixed' | 'update'} props.type - 변경 유형
+ * @param {Object} props
+ * @param {'feature' | 'changed' | 'fixed' | 'update' | 'fix' | string} props.type - 변경 유형
  * @param {React.ReactNode} props.children - 변경 내용
  */
-export const ChangeItem = ({ type, children }) => {
-    const typeConfig = {
+
+interface ChangeItemProps {
+    type: ChangeType;
+    children: React.ReactNode;
+}
+
+interface TypeConfig {
+    text: string;
+    bgColor: string;
+    textColor: string;
+}
+
+interface TypeConfigMap {
+    [key: string]: TypeConfig;
+}
+
+export const ChangeItem = ({ type, children }: ChangeItemProps) => {
+    const typeConfig: TypeConfigMap = {
         feature: {
             text: 'Feature',
             bgColor: 'bg-[#0e845120]',
@@ -56,21 +73,24 @@ export const ChangeItem = ({ type, children }) => {
     );
 };
 
-/**
- * 변경 사항들 사이의 간격을 위한 컴포넌트
- */
 export const Separator = () => {
-    return <tr className="h-0"><td colSpan="2"></td></tr>;
+    return <tr className="h-0"><td colSpan={2}></td></tr>;
 };
 
 /**
- * 각 릴리즈 버전 정보를 표시하는 컴포넌트
- * @param {object} props
+ * @param {Object} props
  * @param {string} props.version - 버전 번호
  * @param {string} props.date - 릴리즈 날짜
  * @param {React.ReactNode} props.children - 해당 버전의 변경 사항들
  */
-export const ReleaseNoteEntry = ({ version, date, children }) => {
+
+interface ReleaseNoteEntryProps {
+    version: string;
+    date: string;
+    children: React.ReactNode;
+}
+
+export const ReleaseNoteEntry = ({ version, date, children }: ReleaseNoteEntryProps) => {
     return (
         <div className="release-entry mb-8">
             <h3 className="font-mono text-xl font-semibold mt-6 mb-1">{version}</h3>
@@ -82,12 +102,17 @@ export const ReleaseNoteEntry = ({ version, date, children }) => {
             </div>
         </div>
     );
-};;
+};
 
 /**
- * @param {object} props
- * @param {React.ReactNode} props.children
+ * @param {Object} props
+ * @param {React.ReactNode} props.children - 릴리즈 노트 컨텐츠
  */
-export const ReleaseNotesContainer = ({ children }) => {
+
+interface ReleaseNotesContainerProps {
+    children: React.ReactNode;
+}
+
+export const ReleaseNotesContainer = ({ children }: ReleaseNotesContainerProps) => {
     return <div className="release-notes-container">{children}</div>;
 }

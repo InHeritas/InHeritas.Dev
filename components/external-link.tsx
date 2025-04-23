@@ -15,6 +15,22 @@ import React from 'react';
  * @param {string} props.hoverBorderColor - 호버 시 테두리 색상 클래스 (선택사항)
  * @param {string} props.className - 추가 CSS 클래스 (선택사항)
  */
+
+interface ExternalLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    href: string;
+    title: string;
+    description?: string;
+    icon?: React.ReactNode;
+    imageSrc?: string;
+    imageAlt?: string;
+    bgColor?: string;
+    borderColor?: string;
+    textColor?: string;
+    hoverBgColor?: string;
+    hoverBorderColor?: string;
+    className?: string;
+}
+
 export default function ExternalLink({
     href,
     title,
@@ -29,7 +45,7 @@ export default function ExternalLink({
     hoverBorderColor = 'hover:border-gray-300',
     className = '',
     ...props
-}) {
+}: ExternalLinkProps) {
     const containerClasses = `
     block w-full p-4 mb-4 mt-2
     rounded-lg 

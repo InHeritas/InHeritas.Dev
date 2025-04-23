@@ -1,5 +1,22 @@
 import React from 'react';
 
+/**
+ * @param {Object} props
+ * @param {string} props.email - 이메일 주소
+ * @param {string} props.subject - 이메일 제목 (선택사항)
+ * @param {string} props.body - 이메일 본문 (선택사항)
+ * @param {string} props.label - 링크 텍스트 (선택사항)
+ * @param {string} props.className - 추가 CSS 클래스 (선택사항)
+ */
+
+interface CompactEmailLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    email: string;
+    subject?: string;
+    body?: string;
+    label?: string;
+    className?: string;
+}
+
 export function CompactEmailLink({
     email,
     subject = "",
@@ -7,7 +24,7 @@ export function CompactEmailLink({
     label = "이메일 문의",
     className = "",
     ...props
-}) {
+}: CompactEmailLinkProps) {
     const mailtoLink = `mailto:${email}${subject ? `?subject=${encodeURIComponent(subject)}` : ""}${body ? `${subject ? "&" : "?"}body=${encodeURIComponent(body)}` : ""
         }`;
 
