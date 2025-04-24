@@ -87,7 +87,7 @@ const globalMeta = {
     },
     sgnoti: {
         type: 'doc',
-        title: 'SGNoti (Closed)',
+        title: 'SGNoti',
         theme: {
             breadcrumb: false,
             footer: true,
