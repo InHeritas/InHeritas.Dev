@@ -2,18 +2,28 @@ import Image from 'next/image'
 import { Callout } from 'nextra/components'
 
 # 문제 해결 및 지원
+# Troubleshooting and Support
 
 확장 프로그램 사용에 문제가 있는 경우 아래의 내용을 참고해주세요.  
 만약 아래에 해당되지 않는다고 생각되면 support@inheritas.dev로 문의해주세요.
 
+If you experience any issues using the extension, please refer to the information below.  
+If you believe your issue is not covered here, please contact me at support@inheritas.dev.
+
 ## 글꼴 파일 등록에 실패하는 경우
 
-일부 iOS 버전에서 사파리의 버그로 인해 파일의 용량이 제한되어 있습니다.
+일부 iOS 버전에서 사파리의 버그로 인해 파일의 용량이 제한되어 있습니다.  
+
+Due to a Safari's bug in some iOS versions, file size is limited.
 
 <div className='border rounded-lg border-solid border-amber-200 px-3 py-3 my-4 bg-amber-50 text-amber-800'>
     <strong>버그의 영향을 받는 iOS 버전</strong>  
-    <span>iOS 18.0, iOS 18.0.1 ~ iOS 18.1 개발자 베타5(22B5054e)</span>
+    <strong>iOS versions affected by the bug</strong>  
+    <span>iOS 18.0 ~ iOS 18.1 Developer Beta 5(22B5054e)</span>
 </div>
 
-버그의 영향을 최소화하기 위해 iOS / iPadOS 18 및 MyType 1.2.2 버전부터 ttf와 otf 파일의 경우 자동으로 woff2 파일로 변환하여 저장하며, 이를 통해 대부분의 글꼴 파일을 사용하실 수 있습니다. 
-하지만, woff2 형식의 파일임에도 불구하고 등록하려는 파일의 총합이 약 4MB를 초과하는 경우 등록이 불가능하며, 이 경우 다른 글꼴을 사용해주시기 바랍니다.
+버그의 영향을 최소화하기 위해 MyType 1.2.2 버전부터 ttf와 otf 파일의 경우 자동으로 woff2 파일로 변환하여 저장하며, 이를 통해 대부분의 글꼴 파일을 사용하실 수 있습니다. 
+하지만, woff2 형식의 파일임에도 불구하고 등록하려는 파일의 총합이 약 4MB를 초과하는 경우 등록이 불가능하며, 이 경우 다른 글꼴을 사용해주시기 바랍니다.  
+
+To minimize the impact of this bug, starting from MyType version 1.2.2, ttf and otf files are automatically converted to woff2 format, allowing most font files to be used.
+However, even with woff2 format files, registration will fail if the total size of files you're trying to use exceeds approximately 4MB. In this case, please use different fonts.
