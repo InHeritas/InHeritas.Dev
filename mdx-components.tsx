@@ -6,7 +6,7 @@ import ExternalLink from './components/external-link';
 
 const docsComponents = getDocsMDXComponents()
 
-export const useMDXComponents: typeof getDocsMDXComponents = components => ({
+export const useMDXComponents: typeof getDocsMDXComponents = (components = {}) => ({
     ...docsComponents,
     ...components,
 
