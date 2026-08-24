@@ -1,29 +1,80 @@
-import Image from 'next/image'
-import { Callout } from 'nextra/components'
+import { LanguageSwitcher } from '../../../components/language-switcher'
+
+<LanguageSwitcher>
+<section lang="ko">
 
 # 문제 해결 및 지원
-# Troubleshooting and Support
 
-확장 프로그램 사용에 문제가 있는 경우 아래의 내용을 참고해주세요.  
+확장 프로그램 사용에 문제가 있는 경우 아래의 내용을 참고해주세요.<br />
 만약 아래에 해당되지 않는다고 생각되면 support@inheritas.dev로 문의해주세요.
 
-If you experience any issues using the extension, please refer to the information below.  
-If you believe your issue is not covered here, please contact me at support@inheritas.dev.
+<nav aria-label="목차" className="not-prose my-6 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
+    <ol className="list-decimal space-y-1.5 pl-5 text-sm marker:font-semibold marker:text-blue-600">
+        <li><a className="text-neutral-900 hover:underline" href="#사파리-실행-후-글꼴-적용이-지연되는-경우">사파리 실행 후 글꼴 적용이 지연되는 경우</a></li>
+        <li><a className="text-neutral-900 hover:underline" href="#글꼴-파일-등록에-실패하는-경우">글꼴 파일 등록에 실패하는 경우</a></li>
+    </ol>
+</nav>
+
+## 사파리 실행 후 글꼴 적용이 지연되는 경우
+
+iOS 26.6 이상 버전에서 사파리를 완전히 종료하거나 백그라운드에서 종료된 후 다시 실행하면, MyType 확장 프로그램의 로딩이 지연되어 글꼴 적용까지 시간이 걸릴 수 있습니다. 이는 [WebKit 버그 320812](https://bugs.webkit.org/show_bug.cgi?id=320812)로 확인된 사파리의 문제입니다.
+
+<div className='border rounded-lg border-solid border-amber-200 px-3 py-3 my-4 bg-amber-50 text-amber-800'>
+    <strong className="block">버그의 영향을 받는 iOS 버전</strong>
+    <span className="mt-1 block">iOS 26.6 이상</span>
+</div>
+
+WebKit에는 이미 [버그 수정 커밋](https://github.com/WebKit/WebKit/commit/7f8d70c0622228116a14f5100cf0e3e6fd333de7)이 반영되었지만, 아직 iOS의 Safari에는 해당 수정이 포함되지 않았습니다. iOS의 Safari에 버그 수정이 포함될 때까지 기다려주시기 바랍니다.
 
 ## 글꼴 파일 등록에 실패하는 경우
 
-일부 iOS 버전에서 사파리의 버그로 인해 파일의 용량이 제한되어 있습니다.  
-
-Due to a Safari's bug in some iOS versions, file size is limited.
+일부 iOS 버전에서 사파리의 버그로 인해 파일의 용량이 제한되어 있습니다.
 
 <div className='border rounded-lg border-solid border-amber-200 px-3 py-3 my-4 bg-amber-50 text-amber-800'>
-    <strong>버그의 영향을 받는 iOS 버전</strong>  
-    <strong>iOS versions affected by the bug</strong>  
-    <span>iOS 18.0 ~ iOS 18.1 Developer Beta 5(22B5054e)</span>
+    <strong className="block">버그의 영향을 받는 iOS 버전</strong>
+    <span className="mt-1 block">iOS 18.0 ~ iOS 18.1 Developer Beta 5(22B5054e)</span>
 </div>
 
-버그의 영향을 최소화하기 위해 MyType 1.2.2 버전부터 ttf와 otf 파일의 경우 자동으로 woff2 파일로 변환하여 저장하며, 이를 통해 대부분의 글꼴 파일을 사용하실 수 있습니다. 
-하지만, woff2 형식의 파일임에도 불구하고 등록하려는 파일의 총합이 약 4MB를 초과하는 경우 등록이 불가능하며, 이 경우 다른 글꼴을 사용해주시기 바랍니다.  
+버그의 영향을 최소화하기 위해 MyType 1.2.2 버전부터 ttf와 otf 파일의 경우 자동으로 woff2 파일로 변환하여 저장하며, 이를 통해 대부분의 글꼴 파일을 사용하실 수 있습니다.
+하지만, woff2 형식의 파일임에도 불구하고 등록하려는 파일의 총합이 약 4MB를 초과하는 경우 등록이 불가능하며, 이 경우 다른 글꼴을 사용해주시기 바랍니다.
+
+</section>
+<section lang="en">
+
+# Troubleshooting and Support
+
+If you experience any issues using the extension, please refer to the information below.<br />
+If you believe your issue is not covered here, please contact me at support@inheritas.dev.
+
+<nav aria-label="Table of contents" className="not-prose my-6 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
+    <ol className="list-decimal space-y-1.5 pl-5 text-sm marker:font-semibold marker:text-blue-600">
+        <li><a className="text-neutral-900 hover:underline" href="#font-application-is-delayed-after-launching-safari">Font application is delayed after launching Safari</a></li>
+        <li><a className="text-neutral-900 hover:underline" href="#font-file-registration-fails">Font file registration fails</a></li>
+    </ol>
+</nav>
+
+## Font application is delayed after launching Safari
+
+On iOS 26.6 and later, font application may be delayed when Safari is relaunched after it has been fully closed or terminated while in the background because the MyType extension takes longer to load. This is a Safari issue tracked as [WebKit bug 320812](https://bugs.webkit.org/show_bug.cgi?id=320812).
+
+<div className='border rounded-lg border-solid border-amber-200 px-3 py-3 my-4 bg-amber-50 text-amber-800'>
+    <strong className="block">iOS versions affected by the bug</strong>
+    <span className="mt-1 block">iOS 26.6 and later</span>
+</div>
+
+Although a [fix has already been committed to WebKit](https://github.com/WebKit/WebKit/commit/7f8d70c0622228116a14f5100cf0e3e6fd333de7), it has not yet been included in Safari on iOS. Please wait for an iOS update that includes the Safari bug fix.
+
+## Font file registration fails
+
+Due to a Safari bug in some iOS versions, file size is limited.
+
+<div className='border rounded-lg border-solid border-amber-200 px-3 py-3 my-4 bg-amber-50 text-amber-800'>
+    <strong className="block">iOS versions affected by the bug</strong>
+    <span className="mt-1 block">iOS 18.0 ~ iOS 18.1 Developer Beta 5 (22B5054e)</span>
+</div>
 
 To minimize the impact of this bug, starting from MyType version 1.2.2, ttf and otf files are automatically converted to woff2 format, allowing most font files to be used.
 However, even with woff2 format files, registration will fail if the total size of files you're trying to use exceeds approximately 4MB. In this case, please use different fonts.
+
+</section>
+</LanguageSwitcher>

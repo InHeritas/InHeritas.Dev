@@ -68,7 +68,10 @@ const globalMeta = {
                         display: 'hidden'
                     },
                     '2': {
-                        display: 'hidden'
+                        display: 'hidden',
+                        theme: {
+                            toc: false
+                        }
                     }
                 }
             },
