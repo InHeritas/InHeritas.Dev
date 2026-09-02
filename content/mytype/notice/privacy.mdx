@@ -1,46 +1,118 @@
-import Image from 'next/image'
-import { Callout } from 'nextra/components'
+import { LanguageSwitcher } from '../../../components/language-switcher'
+
+<LanguageSwitcher>
+<section lang="ko">
+
+# 개인정보 처리방침
+
+본 개인정보 처리방침은 Sunwoo Jung이 운영하는 모바일 기기용 MyType 앱 및 이와 관련된 모든 서비스(이하 통칭하여 "애플리케이션")에 적용됩니다. 이하 Sunwoo Jung을 "서비스 제공자"라 합니다.
+
+**정보의 수집 및 이용**
+
+애플리케이션을 다운로드하거나 사용하는 과정에서 통계 분석 및 사용자 경험 개선을 위해 다음 정보가 자동으로 수집될 수 있습니다.
+
+- 무작위로 생성된 설치 식별자
+- 애플리케이션 및 확장 프로그램 버전, 기기 종류, Safari 버전, iOS/iPadOS 버전, 언어
+- 글꼴 사용 현황: 가져오기 방식, 글꼴 이름, 파일 형식, 설정 통계
+- 글꼴 등록 결과: 성공 여부, 파일 크기 구간 및 소요 시간 구간, 오류 코드
+
+설치 식별자는 무작위로 생성된 후 단방향 해시 처리되며, 기기 고유 식별자나 개인을 식별할 수 있는 정보와 결합되지 않습니다.
+인터넷 사용 정보, 기기 고유 식별자 및 글꼴 파일, 사용자 혹은 기기를 특정할 수 있는 정보는 일체 수집하지 않으며, 가져온 글꼴 파일 및 설정은 기기 내부에서만 처리됩니다.
+
+**수집 거부 방법**
+
+애플리케이션을 삭제하면 해당 기기에서 더 이상 정보가 수집되지 않습니다. 다만 삭제 전에 이미 서비스 제공자에게 전송된 정보는 자동으로 삭제되지 않습니다.
+
+개인정보 삭제를 요청하거나 그 밖의 권리를 행사하려면 support@inheritas.dev로 문의하시기 바랍니다.
+
+**개인정보 보유 정책**
+
+서비스 제공자는 명시된 목적을 달성하는 데 필요한 기간 동안 개인정보를 보유합니다.
+
+- 집계 및 익명화된 데이터: 개인을 식별할 수 없는 정보이므로 기간의 제한 없이 보관할 수 있습니다.
+
+사용자는 법령에 따라 보관해야 하는 경우를 제외하고 자신의 개인정보 삭제를 요청할 수 있습니다. 개인정보 삭제를 요청하려면 support@inheritas.dev로 서비스 제공자에게 문의하시기 바랍니다.
+
+**보관 및 처리 위탁**
+
+수집된 통계 자료는 Cloudflare, Inc.의 인프라(Cloudflare Workers 및 D1)에 저장·처리되며, 이 과정에서 데이터가 국외에 위치한 서버에서 처리될 수 있습니다.
+
+**보안**
+
+서비스 제공자는 사용자 정보의 기밀성 보호를 중요하게 여기며, 처리 및 보관하는 정보를 보호하기 위해 물리적·전자적·절차적 보호조치를 시행합니다.
+
+**개인정보 유출 통지**
+
+사용자의 개인정보에 영향을 미치는 개인정보 유출 사고가 발생하는 경우, 서비스 제공자는 관련 법률에서 정한 요건에 따라 사용자에게 이를 통지합니다. 필요한 경우 해당 통지에는 유출 사고의 성격 및 이를 해결하기 위해 취하고 있는 조치에 관한 정보가 포함됩니다.
+
+**개인정보 처리방침의 변경**
+
+서비스 제공자는 본 개인정보 처리방침을 수시로 변경할 수 있습니다. 중요한 변경 사항이 있는 경우 서비스 제공자는 변경된 개인정보 처리방침과 그 시행일을 게시하여 사용자에게 알립니다. 관련 법률에서 요구하는 경우, 중요한 변경 사항이 효력을 발생하기 전에 사용자의 동의를 받습니다.
+
+이전 버전의 개인정보 처리방침은 보관되며, support@inheritas.dev로 서비스 제공자에게 요청하면 제공받을 수 있습니다.
+
+본 개인정보 처리방침은 2026년 9월 2일부터 시행됩니다.
+
+**문의하기**
+
+애플리케이션 이용 중 개인정보 보호 또는 서비스 제공자의 개인정보 처리 방식에 관한 문의는 support@inheritas.dev로 보내주시기 바랍니다.
+
+</section>
+<section lang="en">
 
 # Privacy Policy
 
-This privacy policy applies to the MyType app (hereby referred to as "Application") for mobile devices that was created by Sunwoo Jung (hereby referred to as "Service Provider") as a Commercial service. This service is intended for use "AS IS".
+This Privacy Policy applies to the MyType app for mobile devices operated by Sunwoo Jung and all related services (collectively, the "Application"). Sunwoo Jung is referred to below as the "Service Provider."
 
-**What information does the Application obtain and how is it used?**
+**Information Collection and Use**
 
-The Application does not obtain any information when you download and use it. Registration is not required to use the Application.
+When you download or use the Application, the following information may be collected automatically for statistical analysis and to improve the user experience:
 
-**Does the Application collect precise real time location information of the device?**
+- A randomly generated installation identifier
+- Application and extension versions, device type, Safari version, iOS/iPadOS version, and language
+- Font usage data: import method, font name, file format, and settings statistics
+- Font registration results: whether registration succeeded, file-size range, processing-time range, and error codes
 
-This Application does not collect precise information about the location of your mobile device.
+The installation identifier is randomly generated, processed using a one-way hash, and is not combined with unique device identifiers or information that can identify an individual.
+The Application does not collect browsing information, unique device identifiers, font files, or any information that can identify a user or device. Imported font files and settings are processed only on the device.
 
-**Do third parties see and/or have access to information obtained by the Application?**
+**How to Opt Out of Collection**
 
-Since the Application does not collect any information, no data is shared with third parties.
+Deleting the Application stops further data collection on that device. However, information transmitted to the Service Provider before deletion is not automatically deleted.
 
-**What are my opt-out rights?**
+To request the deletion of your personal information or exercise any other rights, please contact support@inheritas.dev.
 
-You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
+**Data Retention Policy**
 
-**Children**
+The Service Provider retains personal information for as long as necessary for the stated purposes.
 
-The Application is not used to knowingly solicit data from or market to children under the age of 13.
+- Aggregated and anonymized data: Because this information cannot identify an individual, it may be retained indefinitely.
 
-The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (support@inheritas.dev) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).
+You may request the deletion of your personal information unless it must be retained as required by law. To request deletion, please contact the Service Provider at support@inheritas.dev.
+
+**Storage and Processing**
+
+Collected analytics data is stored and processed using Cloudflare, Inc.'s infrastructure (Workers and D1). During this process, the data may be processed on servers located outside South Korea.
 
 **Security**
 
-The Service Provider is concerned about safeguarding the confidentiality of your information. However, since the Application does not collect any information, there is no risk of your data being accessed by unauthorized individuals.
+The Service Provider considers the confidentiality of user information important and implements physical, electronic, and procedural safeguards to protect the information it processes and stores.
 
-**Changes**
+**Personal Data Breach Notification**
 
-This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to their Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
+If a personal data breach affecting users' personal information occurs, the Service Provider will notify users in accordance with applicable legal requirements. Where necessary, the notice will include information about the nature of the breach and the measures being taken to address it.
 
-This privacy policy is effective as of 2024-05-14
+**Changes to This Privacy Policy**
 
-**Your Consent**
+The Service Provider may revise this Privacy Policy from time to time. If material changes are made, the Service Provider will notify users by publishing the revised Privacy Policy and its effective date. Where required by applicable law, the Service Provider will obtain users' consent before material changes take effect.
 
-By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by the Service Provider.
+Previous versions of this Privacy Policy are retained and are available upon request by contacting the Service Provider at support@inheritas.dev.
+
+This Privacy Policy is effective as of September 2, 2026.
 
 **Contact Us**
 
-If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at support@inheritas.dev.
+If you have any questions about privacy while using the Application or about the Service Provider's privacy practices, please contact support@inheritas.dev.
+
+</section>
+</LanguageSwitcher>

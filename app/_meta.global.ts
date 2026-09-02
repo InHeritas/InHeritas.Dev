@@ -65,7 +65,10 @@ const globalMeta = {
                 title: '공지사항',
                 items: {
                     privacy: {
-                        display: 'hidden'
+                        display: 'hidden',
+                        theme: {
+                            toc: false
+                        }
                     },
                     '2': {
                         display: 'hidden',
