@@ -18,7 +18,7 @@
   },
   "scripts": {
     "dev": "node --no-experimental-webstorage ./node_modules/next/dist/bin/next dev",
-    "build": "node --no-experimental-webstorage ./node_modules/next/dist/bin/next build --webpack && pagefind --site .next/server/app --output-path public/_pagefind",
+    "build": "node --no-experimental-webstorage ./node_modules/next/dist/bin/next build --webpack && node scripts/pagefind.mjs",
     "start": "node --no-experimental-webstorage ./node_modules/next/dist/bin/next start",
     "typecheck": "tsc --noEmit"
   },
