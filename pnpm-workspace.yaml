@@ -1,0 +1,6 @@
+# Skip package versions published less than 24 hours ago (supply-chain safety).
+minimumReleaseAge: 1440
+
+patchedDependencies:
+  # zod >= 4.4 rejects Layout props once `children` is stripped; make it optional.
+  nextra-theme-docs@4.6.1: patches/nextra-theme-docs@4.6.1.patch
